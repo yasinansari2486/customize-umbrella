@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Customize Umbrella</title>
+  </head>
+  <body>
+    <main id="container">
+      <div class="image-container">
+        <div id="umbrella-container">
+          <img id="umbrella-image" src="./assets/BlueUmbrella.png" alt="Umbrella Image" />
+          <img id="loader-image" src="./assets/loader_icon.svg" alt="Image Loader" />
+        </div>
+      </div>
+      <div class="tool-container">
+        <h1>Custom Umbrella</h1>
+
+        <div class="color-button-container">
+          <button
+            id="pink-button"
+            class="color-button"
+            onclick="changeColorAndImage('var(--color-pink)','var(--color-light-pink)','PinkUmbrella.png','pink-button')"
+          ></button>
+          <button
+            id="blue-button"
+            class="color-button active"
+            onclick="changeColorAndImage('var(--color-blue)','var(--color-light-blue)','BlueUmbrella.png','blue-button')"
+          ></button>
+          <button
+            id="yellow-button"
+            class="color-button"
+            onclick="changeColorAndImage('var(--color-yellow)','var(--color-light-yellow)','YellowUmbrella.png','yellow-button')"
+          ></button>
+        </div>
+
+        <h3>Customize your umbrella</h3>
+        <p>Upload a logo for an instant preview</p>
+        <small>.png and .jpg files only. Max file size is 5MB.</small>
+
+        <input type="file" id="file-input" accept=".png, .jpg" style="display: none" />
+        <button id="upload-button" class="upload-button" onclick="handleUploadButtonClick()">
+          <img id="uploaded-logo" src="./assets/upload_icon.svg" />
+          Upload Logo
+        </button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
