@@ -142,6 +142,9 @@ h3 {
   transition: background-color 0.3s ease;
   text-transform: uppercase;
   position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #upload-icon {
@@ -183,5 +186,20 @@ h3 {
 
   .tool-container {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-container {
+    width: 95%;
+  }
+
+  .tool-container {
+    width: 95%;
+  }
+
+  #umbrella-image {
+    max-width: 350px;
+    max-height: 350px;
   }
 }
