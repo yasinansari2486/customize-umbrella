@@ -4,18 +4,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --color-blue: #0f8bf1;
-  --color-blue-border: #95d7e9;
-  --color-light-blue: #c7e3eb;
-  --color-pink: #f10fe6;
-  --color-pink-border: #efbef3;
-  --color-light-pink: #f5e2f7;
-  --color-yellow: #f1c80f;
-  --color-yellow-border: #f3ecb2;
-  --color-light-yellow: #fcfae7;
-}
-
 #container {
   display: flex;
   justify-content: center;
@@ -24,7 +12,7 @@
   width: 100vw;
   gap: 5rem;
   padding: 0 5rem;
-  background-color: var(--color-light-blue);
+  background-color: #c7e3eb;
 }
 
 .image-container {
@@ -79,7 +67,7 @@
   width: 50%;
 }
 
-.color-button-container {
+#color-button-container {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -91,30 +79,6 @@
   border-radius: 100%;
   border: none;
   cursor: pointer;
-}
-
-#pink-button {
-  background-color: var(--color-pink);
-  border: 3px solid var(--color-pink-border);
-}
-#pink-button.active {
-  border: 5px solid var(--color-pink-border);
-}
-
-#blue-button {
-  background-color: var(--color-blue);
-  border: 3px solid var(--color-blue-border);
-}
-#blue-button.active {
-  border: 5px solid var(--color-blue-border);
-}
-
-#yellow-button {
-  background-color: var(--color-yellow);
-  border: 3px solid var(--color-yellow-border);
-}
-#yellow-button.active {
-  border: 5px solid var(--color-yellow-border);
 }
 
 h1 {
@@ -134,7 +98,7 @@ h3 {
   height: 40px;
   border: none;
   border-radius: 2px;
-  background-color: var(--color-blue);
+  background-color: #0f8bf1;
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
   cursor: pointer;

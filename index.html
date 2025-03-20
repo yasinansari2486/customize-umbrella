@@ -17,33 +17,17 @@
       <div class="tool-container">
         <h1>Custom Umbrella</h1>
 
-        <div class="color-button-container">
-          <button
-            id="pink-button"
-            class="color-button"
-            onclick="changeColorAndImage('var(--color-pink)','var(--color-light-pink)','PinkUmbrella.png','pink-button')"
-          ></button>
-          <button
-            id="blue-button"
-            class="color-button active"
-            onclick="changeColorAndImage('var(--color-blue)','var(--color-light-blue)','BlueUmbrella.png','blue-button')"
-          ></button>
-          <button
-            id="yellow-button"
-            class="color-button"
-            onclick="changeColorAndImage('var(--color-yellow)','var(--color-light-yellow)','YellowUmbrella.png','yellow-button')"
-          ></button>
-        </div>
+        <div id="color-button-container"></div>
 
         <h3>Customize your umbrella</h3>
         <p>Upload a logo for an instant preview</p>
         <small class="upload-instruction">.png and .jpg files only. Max file size is 5MB.</small>
 
         <input type="file" id="file-input" accept=".png, .jpg" style="display: none" />
-        <button id="upload-button" onclick="handleUploadButtonClick()">
+        <button id="upload-button">
           <img id="upload-icon" src="./assets/upload_icon.svg" />
           Upload Logo
-          <span id="remove-file" onclick="handleFileRemove(e)">
+          <span id="remove-file">
             <svg
               fill="#ffffff"
               height="20px"
